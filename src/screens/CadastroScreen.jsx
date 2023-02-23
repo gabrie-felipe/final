@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Text, View, Button } from "react-native";
-import { Paragraph, TextInput,  } from "react-native-paper";
+import { Paragraph, TextInput } from "react-native-paper";
 import { styles } from "../lib/styles";
 
 export const CadastroScreen = ({ navigation }) => {
@@ -46,15 +46,16 @@ export const CadastroScreen = ({ navigation }) => {
       />
       <Text>Digite o segundo argumento</Text>
       <TextInput
-        style={styles.digite}
+        style={styles.box}
         label="Escreva o Argumento"
         value={argu2}
         onChangeText={setArgu2}
       />
 
       <Button
-        title="VOlte ao Inicio"
-        
+        style={styles.botao}
+        title="Volte ao Inicio"
+        color="#ffad08"
         onPress={() => navigation.navigate("Home")}
       />
     </View>

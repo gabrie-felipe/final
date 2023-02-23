@@ -6,7 +6,8 @@ export const HomeScreen = ({ navigation }) => {
     <View style={styles.container}>
       <Text style={styles.titulo}>Página Para criar uma Introdução</Text>
       <Button
-        title="Crie seu texto"
+         title="Crie seu texto"
+         color="#ffad08"
         onPress={() => navigation.navigate("Cadastro")}
       />
     </View>
