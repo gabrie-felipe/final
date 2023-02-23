@@ -25,21 +25,29 @@ export const CadastroScreen = ({ navigation }) => {
       </Paragraph>
 
       <Text>Digite o tema do texto</Text>
-      <TextInput label="Escreva o Tema" value={nome} onChangeText={setNome} />
+      <TextInput
+        style={styles.box}
+        label="Escreva o Tema"
+        value={nome}
+        onChangeText={setNome}
+      />
       <Text>Digite uma introdução para o tema</Text>
       <TextInput
+        style={styles.box}
         label="Escreva a Introdução"
         value={intro}
         onChangeText={setIntro}
       />
       <Text>Digite o problema do tema</Text>
       <TextInput
+        style={styles.box}
         label="Escreva um Problema"
         value={problema}
         onChangeText={setProblema}
       />
       <Text>Digite o primeiro argumento</Text>
       <TextInput
+        style={styles.box}
         label="Escreva o Argumento"
         value={argu1}
         onChangeText={setArgu1}
@@ -53,7 +61,6 @@ export const CadastroScreen = ({ navigation }) => {
       />
 
       <Button
-        style={styles.botao}
         title="Volte ao Inicio"
         color="#ffad08"
         onPress={() => navigation.navigate("Home")}

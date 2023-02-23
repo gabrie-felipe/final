@@ -33,5 +33,8 @@ export const styles = StyleSheet.create({
 
   box: {
     marginBottom: 20,
+    backgroundColor: "#6d9788",
+    gap: 10,
   },
+
 });
